@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,40 +19,46 @@
     <header>
         <img src="./img/bikcraft.svg" alt="logo_bikcraft">
         <ul class="menu">
-            <li><a href="#">Bicicleta</a></li>
+            <li><a href="#">Bicicletas</a></li>
             <li><a href="#">Seguros</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
     </header>
     <section class="main">
-        <div class="main-description">
-            <h1>Bicicletas feitas sob medida<span class="dot">.</span></h1>
-            <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-            <a href="#">Escolha a sua</a>
+        <div class="main-container">
+            <div class="main-description">
+                <h1>Bicicletas feitas sob medida<span class="dot">.</span></h1>
+                <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+                <a href="#">Escolha a sua</a>
+            </div>
+            <div class="main-imagem">
+                <img src="./img/fotos/introducao.jpg" alt="introducao">
+            </div>
         </div>
-        <img src="./img/fotos/introducao.jpg" alt="introducao">
     </section>
 
     <section class="options">
-        <h2>escolha a sua <span class="dot">.</span></h2>
-        <div class="options-bikcraft">
-            <ul class="content-bikcraft">
-                <li>
-                    <img src="./img/bicicletas/magic-home.jpg" alt="magic-home">
-                    <h3>Magic Might</h3>
-                    <p>R$ 2499</p>
-                </li>
-                <li>
-                    <img src="./img/bicicletas/nimbus-home.jpg" alt="nimbus-home">
-                    <h3>Nimbus Stark</h3>
-                    <p>R$ 4999</p>
-                </li>
-                <li>
-                    <img src="./img/bicicletas/nebula-home.jpg" alt="nebula-home">
-                    <h3>Nebula Cosmic</h3>
-                    <p>R$ 3999</p>
-                </li>
-            </ul>
+        <div class="options-container">
+            <h2>escolha a sua <span class="dot">.</span></h2>
+            <div class="options-bikcraft">
+                <ul class="content-bikcraft">
+                    <li>
+                        <img src="./img/bicicletas/magic-home.jpg" alt="magic-home">
+                        <h3>Magic Might</h3>
+                        <p>R$ 2499</p>
+                    </li>
+                    <li>
+                        <img src="./img/bicicletas/nimbus-home.jpg" alt="nimbus-home">
+                        <h3>Nimbus Stark</h3>
+                        <p>R$ 4999</p>
+                    </li>
+                    <li>
+                        <img src="./img/bicicletas/nebula-home.jpg" alt="nebula-home">
+                        <h3>Nebula Cosmic</h3>
+                        <p>R$ 3999</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="customization">
@@ -72,7 +84,9 @@
                     </div>
                 </div>
             </div>
-            <img src="./img/fotos/tecnologia.jpg" alt="tecnologia">
+            <div class="custom-imagem">
+                <img src="./img/fotos/tecnologia.jpg" alt="tecnologia">
+            </div>
         </div>
     </section>
 
@@ -94,9 +108,14 @@
 
     <section class="depoimento">
         <div class="depoimento-container">
-            <img src="./img/fotos/depoimento.jpg" alt="depoimento">
-            <p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.
-            </p>
+            <div class="depoimento-imagem">
+                <img src="./img/fotos/depoimento.jpg" alt="depoimento">
+            </div>
+            <div class="depoimento-mensagem">
+                <p class="mensagem"><span>❝</span> Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.<span>❞</span>
+                </p>
+                <p class="depoimento-nome">Ana Júlia</p>
+            </div>
         </div>
     </section>
 
@@ -104,13 +123,14 @@
         <div class="seguros-container">
             <h2>seguros <span class="dot">.</span></h2>
             <div class="seguros-grid">
-                <div class="seguros-column">
+                <div class="seguros-column1">
                     <div class="seguros-flex">
-                        <h3>Prata</h3>
+                        <h3 class="prata">prata</h3>
                         <p>R$ 199</p>
                     </div>
                     <ul>
                         <li>
+                            <!-- <img src="./img/icones/lista.svg" alt="lista"> -->
                             <p>Duas trocas por ano</p>
                         </li>
                         <li>
@@ -123,13 +143,11 @@
                             <p>Cobertura estadual</p>
                         </li>
                     </ul>
-                    <a href="#">inscreva-se</a>
+                    <a class=a1 href="#">inscreva-se</a>
                 </div>
-            </div>
-            <div class="seguros-grid">
-                <div class="seguros-column">
+                <div class="seguros-column2">
                     <div class="seguros-flex">
-                        <h3>Ouro</h3>
+                        <h3>ouro</h3>
                         <p>R$ 299</p>
                     </div>
                     <ul>
@@ -152,7 +170,7 @@
                             <p>Acesso ao Clube Bikcraft</p>
                         </li>
                     </ul>
-                    <a href="#">inscreva-se</a>
+                    <a class=a2 href="#">inscreva-se</a>
                 </div>
             </div>
         </div>
@@ -160,7 +178,9 @@
 
     <section class="contato">
         <div class="contato-container">
-            <img src="./img/bikcraft.svg" alt="bikcraft-logo">
+            <div class="contato-img">
+                <img src="./img/bikcraft.svg" alt="bikcraft-logo">
+            </div>
             <div class="contato-column">
                 <h5>Contato</h5>
                 <ul>
@@ -171,16 +191,28 @@
                         <p>contato@bikcraft.com</p>
                     </li>
                     <li>
+                        <span class="linha"></span>
+                    </li>
+                    <li>
                         <p>Rua Ali Perto, 42 - Botafogo</p>
                     </li>
                     <li>
                         <p>Rio de Janeiro - RJ</p>
                     </li>
+                    <li>
+                        <span class="linha"></span>
+                    </li>
                 </ul>
                 <div class="redes-flex">
-                    <img src="./img/redes/instagram.svg" alt="instagram">
-                    <img src="./img/redes/facebook.svg" alt="facebook.svg">
-                    <img src="./img/redes/youtube.svg" alt="youtube.svg">
+                    <div class="redes-instagram">
+                        <img src="./img/redes/instagram.svg" alt="instagram">
+                    </div>
+                    <div class="redes-facebook">
+                        <img src="./img/redes/facebook.svg" alt="facebook.svg">
+                    </div>
+                    <div class="redes-youtube">
+                        <img src="./img/redes/youtube.svg" alt="youtube.svg">
+                    </div>
                 </div>
             </div>
             <div class="info-column">
