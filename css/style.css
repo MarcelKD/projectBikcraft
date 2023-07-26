@@ -610,7 +610,7 @@ footer p {
 }
 
 .titulo-container {
-    width: 1200px;
+    width: 1120px;
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -825,4 +825,29 @@ p {
     /* grid-row: 1; */
     /* left: 467px;
     top: 80px; */
+}
+
+.mais-sobre-bg {
+    background-color: var(--c11);
+}
+
+.mais-sobre-container {
+    width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.mais-sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mais-sobre-first-column {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mais-sobre-first-column:nth-child(n+2) {
+    padding: 100px;
 }
