@@ -841,13 +841,30 @@ p {
 .mais-sobre-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
 .mais-sobre-first-column {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 20px;
 }
 
-.mais-sobre-first-column:nth-child(n+2) {
-    padding: 100px;
+
+#mais-sobre-img1 {
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+
+#mais-sobre-img2, #mais-sobre-img3 {
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.mais-sobre-grid-detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
