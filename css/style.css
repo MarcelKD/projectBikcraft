@@ -70,6 +70,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    background-color: var(--c12);
 }
 
 header img {
@@ -553,6 +554,7 @@ h3 {
     margin: 60px;
     margin-left: 18%;
     margin-right: 18%;
+    background-color: var(--c12);
 }
 
 
@@ -590,6 +592,7 @@ footer p {
     color: var(--c4);
     margin: 20px 18% 60px 18%;
     font-size: 1.2rem;
+    /* background-color: var(--c12); */
 }
 
 .info-column a {
@@ -834,8 +837,8 @@ p {
 .mais-sobre-container {
     width: 1120px;
     margin: 0 auto;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    /* padding-bottom: 40px; */
+    padding-top: 40px;
 }
 
 .mais-sobre-grid {
@@ -964,12 +967,80 @@ p {
     width: max-content;
 }
 
-.titulo-container h2 {
-    font-size: 4rem;
-    color: var(--c11);
-    background-color: var(--c1);
+.escolha-bg {
+    background-color: var(--w);
 }
 
-.body-backgroud {
-    background-color: var(--c1);
+.escolha-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
 }
+
+.escolha-container {
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.escolha-container h2 {
+    font-size: 4rem;
+    color: var(--c11);
+}
+
+.escolha-container p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--c5);
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.escolha-container h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--w);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.escolha-container span {
+    color: var(--p1);
+}
+
+.escolha-grid1 img {
+    width: 100%;
+    height: auto;
+}
+
+.escolha-grid1 h3{ 
+    color: var(--c12);
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+    padding: 8px 0 8px 16px;
+    position: relative;
+}
+
+.escolha-grid1 h3::before {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    background-color: var(--p1);
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+
+.escolha-grid1 span {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: var(--c7);
+    font-family: roboto;
+    font-weight: 600;
+    padding-left: 16px;
+}
+
