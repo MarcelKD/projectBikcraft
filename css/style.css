@@ -1183,3 +1183,70 @@ p {
     margin-top: 7px;
 }
 
+.pgseguros-vantagens-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.pgseguros-vantagens-grid h3 {
+    color: var(--w);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: roboto;
+}
+
+.pgseguros-vantagens-grid p {
+    color: var(--c6);
+    font-size: 0.8rem;
+    font-family: roboto;
+}
+
+.pgseguros-perguntas-bg {
+    background-color: var(--w);
+}
+
+.pgseguros-perguntas-lista {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.pgseguros-perguntas-lista li {
+    padding: 10px 0;
+}
+
+.pgseguros-container2 {
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pgseguros-container2 h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--c12);
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.pgseguros-container2 span {
+    color: var(--p1);
+}
+
+.pgseguros-perguntas-lista li {
+    position: relative;
+}
+
+.pgseguros-perguntas-lista li::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--p1);
+    width: 12px;
+    height: 8px;
+    left: -17px;
+    top: 17px;
+}
