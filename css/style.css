@@ -1250,3 +1250,28 @@ p {
     left: -17px;
     top: 17px;
 }
+
+.cadastro-bg {
+    background-color: var(--c11);
+}
+
+.cadastro-container {
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cadastro-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.cadastro-grid-column1 {
+    background-color: var(--c12);
+    padding: 40px;
+}
+
+.cadastro-grid-column2 {
+    padding: 40px;
+}
