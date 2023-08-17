@@ -1273,5 +1273,24 @@ p {
 }
 
 .cadastro-grid-column2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 40px;
+}
+
+.cadastro-grid-column2 label {
+    display: block;
+}
+
+[name="mensagem"] {
+    grid-row: 3;
+}
+
+[name="telefone"] {
+    grid-column: 2;
+}
+
+.cadastro-grid-column2 > .botao {
+    grid-row: 4;
 }
