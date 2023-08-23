@@ -1275,24 +1275,53 @@ p {
 .cadastro-grid-column2 {
     padding: 40px;
 }
-.form {
+.formulario-cliente {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
 }
 
-/* .cadastro-grid-column2 label {
-    display: block;
-} */
-
-.cadastro-grid-column2 > .botao {
-    grid-row: 4;
-}
-
-#nome, #telefone, #mensagem {
+#mensagem {
     grid-column: 1;
-} 
+    grid-row: 6;
+}
 
-#email {
+label[for="nome"] {
+    grid-row: 1;
+    grid-column: 1;
+}
+  
+input#nome {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+label[for="telefone"] {
+    grid-row: 1;
     grid-column: 2;
+}
+  
+input#telefone {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+label[for="email"] {
+    grid-row: 3;
+    grid-column: 1;
+}
+  
+input#email {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+label[for="mensagem"] {
+    grid-row: 5;
+    grid-column: 1;
+}
+  
+input#mensagem {
+    grid-row: 6;
+    grid-column: 1;
 }
