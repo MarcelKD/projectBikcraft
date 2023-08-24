@@ -21,6 +21,10 @@
     --p1: #ffbb00;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -1265,25 +1269,78 @@ p {
 .cadastro-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    font-family: Roboto;
+}
+
+.cadastro-grid-column1 h3 {
+    color: var(--w);
+    font-family: roboto;
+    font-size: 1rem;
 }
 
 .cadastro-grid-column1 {
     background-color: var(--c12);
-    padding: 40px;
+    padding: 40px 40px 40px 60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.cadastro-grid-column1 span {
+    color: var(--c4);
+}
+
+.cadastro-grid-column1 li {
+    padding: 20px 0;
+}
+
+.cadastro-grid-column1 ul {
+    padding: 0;
+}
+
+.cadastro-grid-menor {
+    display: grid;
+    grid-template-columns: 16px auto;
+    column-gap: 10px;
+}
+
+.cadastro-grid-menor span {
+    grid-column: 2;
+}
+
+.cadastro-flex {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0 60px 20px;
 }
 
 .cadastro-grid-column2 {
     padding: 40px;
+    background-color: var(--w);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+
+.cadastro-grid-column2 label {
+    font-size: .9rem;
+    font-family: poppins;
+    font-weight: 700;
+    color: var(--c11);
+}
+
+.cadastro-grid-column2 input {
+    border-radius: 5px;
+    border: 1px solid var(--c2);
+    background: var(--c1);
+}
+
+input#nome:focus {
+    border: 1px solid var(--p1);
+}
+
 .formulario-cliente {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
-}
-
-#mensagem {
-    grid-column: 1;
-    grid-row: 6;
 }
 
 label[for="nome"] {
@@ -1314,6 +1371,7 @@ label[for="email"] {
 input#email {
     grid-row: 4;
     grid-column: 1;
+    width: 200%;
 }
 
 label[for="mensagem"] {
@@ -1324,4 +1382,6 @@ label[for="mensagem"] {
 input#mensagem {
     grid-row: 6;
     grid-column: 1;
+    width: 200%;
 }
+
