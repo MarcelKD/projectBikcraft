@@ -1375,7 +1375,8 @@ label[for="email"] {
 input#email {
     grid-row: 4;
     grid-column: 1;
-    width: 200%;
+    /* width: 200%; */
+    grid-column: span 2;
     height: 36px;
 }
 
@@ -1387,8 +1388,32 @@ label[for="mensagem"] {
 input#mensagem {
     grid-row: 6;
     grid-column: 1;
-    width: 200%;
+    /* width: 200%; */
+    grid-column: span 2;
 }
+
+.form label {
+    display: block;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="textarea"] {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    background: var(--c1);
+    border: 1px solid var(--c2);
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="textarea"]:focus {
+    outline: none;      
+    border-color: var(--p1);
+    background-color: var(--w);
+    box-shadow: 0 0 0 2px ;
+}
+
+
 
 .lojas-locais-bg {
     background-color: var(--w);
@@ -1412,15 +1437,47 @@ input#mensagem {
 
 .lojas-locais-cidade {
     padding: 20px;
+    position: relative;
 }
 
 .lojas-locais-cidade h2 {
     padding: 0;
     padding-bottom: 20px;
+    padding-left: 20px;
     margin: 0;
 }
+
+.lojas-locais-column h2::before {
+    content: " ";
+    width: 12px;
+    height: 6px;
+    background-color: var(--p1);
+    position: absolute;
+    left: 20px;
+    top: 28px;
+
+}
+
 .lojas-locais-cidade-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 0 20px 20px;
+    padding: 0 0 20px 32px;
+    color: var(--c7);
+}
+
+.lojas-locais-atendimento span {
+    padding-left: 24px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    font-family: roboto;
+}
+
+.lojas-locais-atendimento span::before {
+    content: " ";
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/icones/horario.svg');
+    position: absolute;
+    left: 18px;
+    top: 133px;
 }
