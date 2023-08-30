@@ -1313,7 +1313,7 @@ p {
     padding: 20px 0 60px 20px;
 }
 
-.cadastro-grid-column2 {
+/* .cadastro-grid-column2 {
     padding: 40px;
     background-color: var(--w);
     border-top-right-radius: 5px;
@@ -1321,6 +1321,7 @@ p {
 }
 
 .cadastro-grid-column2 label {
+    display: block;
     font-size: .9rem;
     font-family: poppins;
     font-weight: 700;
@@ -1339,8 +1340,7 @@ input#nome:focus {
 
 .formulario-cliente {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr 1fr;
 }
 
 label[for="nome"] {
@@ -1369,27 +1369,53 @@ input#telefone {
 
 label[for="email"] {
     grid-row: 3;
-    grid-column: 1;
+    grid-column: span 2;
+
 }
   
 input#email {
     grid-row: 4;
-    grid-column: 1;
-    /* width: 200%; */
     grid-column: span 2;
     height: 36px;
 }
 
 label[for="mensagem"] {
     grid-row: 5;
-    grid-column: 1;
+    grid-column: span 2;
 }
   
 input#mensagem {
     grid-row: 6;
-    grid-column: 1;
-    /* width: 200%; */
     grid-column: span 2;
+}
+
+.formulario-cliente input[type="text"],
+.formulario-cliente input[type="email"],
+.formulario-cliente input[type="textarea"] {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    background: var(--c1);
+    border: 1px solid var(--c2);
+}
+
+.formulario-cliente input[type="text"]:focus,
+.formulario-cliente input[type="email"]:focus,
+.formulario-cliente input[type="textarea"]:focus {
+    outline: none;      
+    border-color: var(--p1);
+    background-color: var(--w);
+    box-shadow: 0 0 0 2px ;
+}
+ */
+
+.cadastro-grid-column2 {
+    padding: 60px;
+    background-color: var(--w);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .form label {
@@ -1398,22 +1424,44 @@ input#mensagem {
 
 .form input[type="text"],
 .form input[type="email"],
-.form input[type="textarea"] {
+.form textarea {
     font: 400 1rem/1.5 "Roboto", sans-serif;
     background: var(--c1);
     border: 1px solid var(--c2);
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
-.form input[type="textarea"]:focus {
+.form textarea:focus {
     outline: none;      
     border-color: var(--p1);
     background-color: var(--w);
-    box-shadow: 0 0 0 2px ;
+    box-shadow: 0 0 0 2px #fea;
 }
 
+.form label[for="email"],
+.form input [type="email"] {
+    grid-column: span 2;
+}
 
+.form label[for="mensagem"],
+.form textarea {
+    grid-column: span 2;
+}
+
+.form label[for="nome"],
+.form input [id="nome"] {
+    grid-column: 1;
+}
+
+.form label[for="telefone"],
+.form input [name="telefone"] {
+    grid-column: 2;
+}
 
 .lojas-locais-bg {
     background-color: var(--w);
