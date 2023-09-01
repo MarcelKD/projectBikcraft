@@ -39,17 +39,55 @@
 
                 </div>
                 <div class="cadastro-grid-column2">
-                    <form class="form" action="./contato.html">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
-                        <label for="telefone">Telefone</label>
-                        <input type="text"id="telefone"name="telefone" placeholder="(21) 9999-9999">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="contato@email.com">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+                    <h4>DADOS PESSOAIS</h4>
+                    <form class="form2" action="./contato.html">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div>
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text"id="sobrenome"name="sobrenome">
+                        </div>
+                        <div>
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <h4>ENTREGA</h4>
+                        <div>
+                            <label for="cep">CEP</label>
+                            <input type="number" id="cep" name="cep">
+                        </div>
+                        <div>
+                            <label for="numero">Número</label>
+                            <input type="number" id="numero" name="numero">
+                        </div>
+                        <div>
+                            <label for="logradouro">Logradouro</label>
+                            <input type="text" id="logradouro" name="logradouro" placeholder="Rua, avenida">
+                        </div>
+                        <div>
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro">
+                        </div>
+                        <div>
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade">
+                        </div>
+                        <div>
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" >
+                                <option value=""disabled selected>Selecione</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="rj">Rio de Janeiro</option>
+                        </select>
+                        </div>
                     </form>
-                    <a class="botao" href="./">ENVIAR MENSAGEM</a>
+                    <a class="botao" href="./">SOLICITAR ORÇAMENTO</a>
                 </div>
             </div>
         </div>

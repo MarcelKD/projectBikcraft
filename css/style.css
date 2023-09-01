@@ -1447,3 +1447,7 @@ p {
     top: 133px;
 }
 
+.form2 label {
+    display: block;
+}
+
