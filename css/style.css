@@ -1451,3 +1451,17 @@ p {
     display: block;
 }
 
+.orcamento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+.col-2 {
+    grid-column: span 2;
+}
+
+.form2 label[for="cpf"],
+.form2 input[name="cpf"] {
+    grid-column: span 2;
+}
+
