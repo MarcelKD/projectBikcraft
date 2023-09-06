@@ -63,11 +63,11 @@
                         <div class="orcamento-grid">
                             <div>
                                 <label for="cep">CEP</label>
-                                <input type="number" id="cep" name="cep">
+                                <input type="text" id="cep" name="cep">
                             </div>
                             <div>
                                 <label for="numero">Número</label>
-                                <input type="number" id="numero" name="numero">
+                                <input type="text" id="numero" name="numero">
                             </div>
                             <div>
                                 <label for="logradouro">Logradouro</label>
@@ -83,11 +83,15 @@
                             </div>
                             <div>
                                 <label for="estado">Estado</label>
-                                <select name="estado" id="estado" >
+                                <select name="estado" id="estado">
                                     <option value=""disabled selected>Selecione</option>
                                     <option value="sp">São Paulo</option>
                                     <option value="rj">Rio de Janeiro</option>
                                 </select>
+                            </div>
+                            <div class="aceito-termos">
+                                <input type="checkbox">
+                                <label for="checkbox">Li e aceito os <span>termos e condições</span></label>                                
                             </div>
                         </div>
                     </form>

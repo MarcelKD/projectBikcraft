@@ -1258,6 +1258,7 @@ p {
 .cadastro-bg {
     background-color: var(--c11);
     box-shadow: inset 0px -20rem var(--w);
+    width: 100%;
 }
 
 .cadastro-container {
@@ -1454,14 +1455,84 @@ p {
 .orcamento-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
  
 .col-2 {
     grid-column: span 2;
 }
 
-.form2 label[for="cpf"],
-.form2 input[name="cpf"] {
+.form2 label {
+    width: 100%;
+    font-family: poppins;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.form2 input,
+.form2 select {
+    font: 400 .8rem/1.5 "Roboto", sans-serif;
+    background: var(--c1);
+    border: 1px solid var(--c2);
+    padding: 6px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.form2 input:focus,
+.form2 select:focus {
+    outline: none;      
+    border-color: var(--p1);
+    background-color: var(--w);
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.cadastro-grid-column2 {
+    border-radius: 0 4px 4px 0;
+}
+
+.aceito-termos {
+    display: flex;
     grid-column: span 2;
 }
 
+.aceito-termos input {
+    width: fit-content;
+}
+
+.aceito-termos span {
+    text-decoration: underline;
+}
+
+.cadastro-grid-column2 h4,
+.form2 h4 {
+    font-size: .7rem;
+    color: var(--c9);
+    font-family: roboto;
+}
+
+.cadastro-grid-column2 ,
+.form2 {
+    position: relative;
+}
+
+.cadastro-grid-column2 h4::before {
+    content: " ";
+    width: 10px;
+    height: 6px;
+    background-color: var(--p1);
+    position: absolute;
+    top: 77px;
+    left: 45px;
+}
+
+.form2 h4::before {
+    content: " ";
+    width: 10px;
+    height: 6px;
+    background-color: var(--p1);
+    position: absolute;
+    top: 214px;
+    left: -15px;
+}
