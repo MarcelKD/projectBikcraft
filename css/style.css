@@ -1506,7 +1506,8 @@ p {
 }
 
 .cadastro-grid-column2 h4,
-.form2 h4 {
+.form2 h4,
+.orcamento-prodseg h4 {
     font-size: .7rem;
     color: var(--c9);
     font-family: roboto;
@@ -1517,7 +1518,8 @@ p {
     position: relative;
 }
 
-.cadastro-grid-column2 h4::before {
+.cadastro-grid-column2 h4::before,
+.orcamento-prodseg h4::before {
     content: " ";
     width: 10px;
     height: 6px;
@@ -1535,4 +1537,35 @@ p {
     position: absolute;
     top: 214px;
     left: -15px;
+}
+
+.orcamento-prodseg {
+    position: relative;
+    color: var(--c5);
+}
+
+.orcamento-prodseg h4 {
+    font-size: .8rem;
+    color: var(--c5);
+    font-family: roboto;
+    align-items: center;
+}
+
+.orcamento-prodseg h4::before {
+    content: " ";
+    width: 10px;
+    height: 6px;
+    background-color: var(--p1);
+    position: absolute;
+    top: 2px;
+    left: -15px;
+}
+
+.orcamento-prod, .orcamento-seg {
+    display: none;
+}
+
+#bikcraft:checked ~ .orcamento-prod,
+#seguro:checked ~ .orcamento-seg {
+    display: block;
 }
