@@ -1567,12 +1567,13 @@ p {
 }
 
 .orcamento-prod, .orcamento-seg {
-    /* display: none; */
+    display: none;
 }
 
 #bikcraft:checked ~ .orcamento-prod,
 #seguro:checked ~ .orcamento-seg {
-    display: block;
+    display: grid;
+    gap: 20px;
 }
 
 .orcamento-prodseg > * {
@@ -1586,10 +1587,13 @@ p {
 .orcamento-prodseg label {
     font: 400 1rem/1.5 "Poppins";
     background-color: var(--c10);
-    display: block;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
     padding: 12px 16px;
     border-radius: 4px;
     cursor: pointer;
+    border: 1px solid var(--c10);
 }
 
 .orcamento-prodseg label::before {
@@ -1601,6 +1605,16 @@ p {
     border: 1px solid var(--c6);
     border-radius: 50%;
     margin-right: 8px;
+}
+
+.orcamento-prodseg label span {
+    display: none;
+}
+
+.orcamento-prodseg input:checked + label span {
+    display: inline-block;
+    color: var(--c11);
+    font-weight: 700;
 }
 
 .orcamento-prodseg input:checked + label::before {
@@ -1617,4 +1631,51 @@ p {
 .orcamento-prodseg input:checked + label {
     background-color: var(--w);
     color: var(--c11);
+}
+
+.orcamento-prod h4, .orcamento-seg h4 {
+    margin-top: 20px;
+}
+
+.orcamento-prodseg label:hover { 
+    background-color: var(--c9);
+    border-color: var(--c9);
+}
+
+.orcamento-prodseg label:focus {
+    background-color: var(--c9);
+    box-shadow: 0 0 0 2px var(--p1);
+}
+
+.orcamento-prodseg input:focus + label {
+    box-shadow: 0 0 0 2px var(--p1);
+    border: 1px solid var(--c12);
+}
+
+.orcamento-detalhes {
+    background-color: var(--w);
+    padding: 20px;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.orcamento-detalhes li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.orcamento-detalhes li img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+.orcamento-prodseg input:checked + label + .orcamento-detalhes {
+    display: grid;
+}
+
+.orcamento-prodseg input:checked + label + .orcamento-detalhes {
+        display: grid;
 }
