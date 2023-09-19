@@ -1262,7 +1262,7 @@ p {
 }
 
 .cadastro-container {
-    width: 1120px;
+    width: 1320px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1270,7 +1270,7 @@ p {
 
 .cadastro-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 3fr 5fr;
     font-family: Roboto;
 }
 
@@ -1562,7 +1562,27 @@ p {
     height: 6px;
     background-color: var(--p1);
     position: absolute;
-    top: 2px;
+    top: 19px;
+    left: -15px;
+}
+
+.orcamento-prod h4::before {
+    content: " ";
+    width: 10px;
+    height: 6px;
+    background-color: var(--p1);
+    position: absolute;
+    top: 160px;
+    left: -15px;
+}
+
+.orcamento-seg h4::before {
+    content: " ";
+    width: 10px;
+    height: 6px;
+    background-color: var(--p1);
+    position: absolute;
+    top: 160px;
     left: -15px;
 }
 
@@ -1654,7 +1674,8 @@ p {
 
 .orcamento-detalhes {
     background-color: var(--w);
-    padding: 20px;
+    color: var(--c9);
+    padding: 0px 20px;
     display: none;
     grid-template-columns: 1fr 1fr;
     border-radius: 4px;
@@ -1665,11 +1686,16 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
+    padding: 0;
 }
 
 .orcamento-detalhes li img {
     width: 16px;
     margin-right: 8px;
+}
+
+.orcamento-detalhes img {
+    width: 100%;
 }
 
 .orcamento-prodseg input:checked + label + .orcamento-detalhes {
