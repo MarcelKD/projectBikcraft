@@ -1723,6 +1723,11 @@ p {
 }
 
 @media (max-width:800px) {
+
+    .menu {
+        margin-right: 0;
+    }
+
     .main-imagem {
         display: none;
     }
@@ -1800,4 +1805,13 @@ p {
         grid-template-columns: 1fr 1fr;
     }
 
+    .seguros-column1,
+    .seguros-column2 {
+        width: 275px;
+    }
+
+    .partner-list li {
+        padding: 0px;
+        width: auto;
+    }
 }
