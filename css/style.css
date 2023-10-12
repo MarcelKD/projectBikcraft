@@ -135,7 +135,7 @@ header a {
 .main-imagem {
     min-width: 450px;
     min-height: 570px;
-} 
+}
 
 /* Não usar imagens dentro da grid direto, criar uma div */
 
@@ -153,7 +153,7 @@ header a {
 .main-description h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
-    margin-bottom: 32px;    
+    margin-bottom: 32px;
 }
 
 .main-description p {
@@ -1733,8 +1733,8 @@ p {
     .main-description h1,
     .options-container h2 {
         font-size: 3rem;
-        margin-bottom: 16px; 
-        margin-left: 5%;   
+        margin-bottom: 16px;
+        margin-left: 5%;
         margin-right: 18%;
     }
 
@@ -1756,6 +1756,7 @@ p {
     .main-imagem {
         display: none;
     }
+
     .content-bikcraft {
         display: block;
         padding-bottom: 0;
@@ -1763,6 +1764,7 @@ p {
         margin-right: 10%;
         gap: 0 40px;
     }
+
     .customization img {
         display: none;
     }
@@ -1770,7 +1772,7 @@ p {
     .custom-container {
         padding-top: 0;
         margin-left: 5%;
-    } 
+    }
 
     .custom-info h3 {
         display: none;
@@ -1795,24 +1797,27 @@ p {
     .customization {
         margin-right: 0%;
     }
-    .partners-container h2{
+
+    .partners-container h2 {
         font-size: 3rem;
         margin-left: 5%;
     }
 
     .partner-list {
-            grid-template-columns: auto auto;
-            justify-content: center;
-            margin-left: 5%;
-            margin-right: 5%;
-            justify-content: auto;
-            justify-items: auto;
-            align-items: auto;
-            align-content: auto;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: auto;
+        justify-items: auto;
+        align-items: auto;
+        align-content: auto;
     }
+
     .partner-list li {
-            border: none;
+        border: none;
     }
+
     .depoimento-container {
         grid-template-columns: 1fr;
     }
@@ -1825,7 +1830,7 @@ p {
         padding: 0px;
         margin: 0;
     }
-    
+
     .mensagem {
         font-size: 1rem;
         padding: 20px;
@@ -1846,7 +1851,7 @@ p {
     .seguros-container h2 {
         font-size: 3rem;
         margin-left: 5%;
-    } 
+    }
 
     .seguros-grid {
         margin: 0;
@@ -1865,7 +1870,7 @@ p {
     header {
         flex-wrap: wrap;
     }
-    
+
     .customization h2 {
         font-size: 3rem;
         flex-wrap: wrap;
@@ -1878,11 +1883,16 @@ p {
     .seguros-column1,
     .seguros-column2 {
         width: 275px;
-        padding: 0;
+        padding: 20px;
     }
 
-    .seguros-ul li { 
+    .seguros-ul li {
         padding: 0px;
+    }
+
+    .seguros-column1 li,
+    .seguros-column2 li {
+        margin-left: 30px;
     }
 
     .partner-list li {
