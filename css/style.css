@@ -754,14 +754,19 @@ p {
     position: relative;
 }
 
+
+.bicicletas-bg {
+    background: var(--c11);
+    box-shadow: inset 500px 0px white, inset 0px -100px black;
+    border-radius: 4px;
+}
+
 .bicicletas-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
     width: 100%;
     gap: 40px;
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
 }
 
 .bicicletas-grid-menor {
@@ -808,11 +813,6 @@ p {
     justify-self: end;
 }
 
-.bicicletas-bg {
-    background: var(--c11);
-    box-shadow: inset 500px 0px white;
-    border-radius: 4px;
-}
 
 .bicicletas-bg h2 {
     color: var(--w);
